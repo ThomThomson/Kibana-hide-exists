@@ -1,0 +1,12 @@
+{
+  "name": "kibana-hide-exists",
+  "version": "1.0.0",
+  "description": "This package hides the exists option for all controls in all dashboards in a Kibana instance.",
+  "main": "index.js",
+  "author": "ThomThomson",
+  "license": "MIT",
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.7.0",
+    "prompt-async": "^0.9.9"
+  }
+}
