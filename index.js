@@ -59,6 +59,7 @@ const updateControlsJson = (originalJson) => {
     const dashboardId = hit._id;
     const dashboard = hit._source.dashboard;
     console.log("Analyzing: ", dashboard.title);
+    if (!dashboard.controlGroupInput?.panelsJSON) continue;
     const { newControlsJSON, updateCount } = updateControlsJson(
       dashboard.controlGroupInput.panelsJSON
     );
